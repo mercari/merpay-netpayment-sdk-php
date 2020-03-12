@@ -7,7 +7,7 @@ PHP wrapper for Merpay Online payments API.
 
 `\Mercari\Merpay\Netpayment\Client` provides a simple interface for Merpay Online payments API. Please use provided values by Merpay for the arguments of the construcor.
 
-```
+```php
 <?php
 
 require_once 'mercari/merpay/netpayment/client.php';
@@ -56,7 +56,7 @@ Please see the integration guide for the details of each API.
 
 ## Parsing a payload of the incoming webhooks
 
-```
+```php
 $obj = json_decode($payload, false);
 $completion = new \Mercari\Merpay\Netpayment\Callback\CompletionRequest($obj);
 ```
